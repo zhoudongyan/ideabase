@@ -1,0 +1,138 @@
+{
+  "header": {
+    "title": "IdeaBase.ai",
+    "subtitle": "Discover startup opportunities from GitHub trending projects"
+  },
+  "navigation": {
+    "trending": "Trending Projects",
+    "apiDocs": "API Docs",
+    "github": "GitHub"
+  },
+  "filter": {
+    "search": "Search Projects",
+    "searchPlaceholder": "Project name or description...",
+    "language": "Programming Language",
+    "allLanguages": "All Languages",
+    "dateRange": "Date Range",
+    "allTime": "All Time",
+    "today": "Today",
+    "thisWeek": "This Week",
+    "thisMonth": "This Month",
+    "sortBy": "Sort By",
+    "byDate": "By Date",
+    "byStars": "By Stars",
+    "byForks": "By Forks"
+  },
+  "project": {
+    "loading": "Loading...",
+    "error": "Failed to fetch projects, please try again later",
+    "noResults": "No projects found",
+
+    "listedDate": "Listed Date",
+    "language": "Language",
+    "noDescription": "No description available",
+    "viewAnalysis": "View Business Analysis",
+    "backToList": "Back to List",
+    "visitGitHub": "Visit GitHub",
+    "projectHomepage": "Project Homepage",
+    "loadLimitReached": "Data loading limit reached",
+    "loadLimitTip": "For performance optimization, we limit the display to 100 records. Please use the search function to find specific projects.",
+    "searchTip": "Please use the search and filter functions above to precisely find projects you're interested in.",
+    "showingResults": "Showing {{current}} results ({{total}} total)",
+    "trendingSuffix": "trending",
+    "errorTitle": "Something went wrong"
+  },
+  "insight": {
+    "title": "Business Insights & Startup Analysis",
+    "businessValue": "Business Value",
+    "marketOpportunity": "Market Opportunity",
+    "startupIdeas": "Startup Ideas",
+    "targetAudience": "Target Audience",
+    "competitionAnalysis": "Competition Analysis",
+    "generatedTime": "Analysis Generated Time"
+  },
+  "analysis": {
+    "noData": "No data",
+    "errorRetry": "You can try again later or contact our support team.",
+    "processingIssue": "Analysis processing issue",
+    "technicalIssue": "We encountered technical issues analyzing this project. You can still view partial content or try again later.",
+    "analysisTime": "Analysis time"
+  },
+  "footer": {
+    "copyright": "IdeaBase.ai. Ideas are not the most important thing, but having no ideas is absolutely not acceptable.",
+    "contactUs": "Contact Us",
+    "dailyAnalysis": "Daily analysis of GitHub trending projects to discover entrepreneurial opportunities.",
+    "aboutUs": "About Us",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service"
+  },
+  "share": {
+    "label": "Share",
+    "linkedin": "Share on LinkedIn",
+    "facebook": "Share on Facebook"
+  },
+  "language": {
+    "zh": "中文",
+    "en": "English"
+  },
+  "common": {
+    "backToTop": "Back to Top"
+  },
+  "api": {
+    "title": "IdeaBase.ai API",
+    "backToHome": "Back to Home",
+    "documentTitle": "API Documentation",
+    "documentDescription": "IdeaBase.ai REST API provides access to GitHub trending project data and AI analysis results",
+    "basicInfo": {
+      "title": "Basic Information",
+      "baseUrl": "Base URL",
+      "authentication": "Authentication",
+      "contentType": "Content Type",
+      "version": "API Version"
+    },
+    "endpoints": {
+      "title": "API Endpoints",
+      "getProjects": {
+        "name": "Get Trending Projects List",
+        "description": "Get a list of all GitHub trending projects"
+      },
+      "getProject": {
+        "name": "Get Project Details by owner/repo",
+        "description": "Get project details by GitHub username and repository name"
+      },
+      "getInsights": {
+        "name": "Get Project Analysis by owner/repo",
+        "description": "Get AI analysis results for a project by GitHub username and repository name"
+      },
+      "getLanguages": {
+        "name": "Get Trending Languages List",
+        "description": "Get a list of all programming languages from GitHub trending projects"
+      },
+      "adminScrape": {
+        "name": "Trigger Manual Scraping",
+        "description": "Manually trigger GitHub trending projects scraping (requires admin privileges)"
+      }
+    },
+    "parameters": {
+      "language": "Filter by programming language",
+      "limit": "Limit number of returned results",
+      "offset": "Pagination offset",
+      "owner": "GitHub username or organization name",
+      "repo": "Repository name",
+      "insightLanguage": "Language for insight content, defaults to English",
+      "languages": "List of languages to scrape",
+      "timeRange": "Time range: daily/weekly/monthly"
+    },
+    "table": {
+      "parameters": "Parameters",
+      "name": "Name",
+      "type": "Type",
+      "required": "Required",
+      "description": "Description",
+      "response": "Response",
+      "yes": "Yes",
+      "no": "No"
+    },
+    "footer": "API Documentation Version v1.0.0"
+  }
+}

@@ -1,0 +1,17 @@
+[Unit]
+Description=IdeaBase AI Service
+After=docker.service
+Requires=docker.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+WorkingDirectory=/home/admin/ideabase
+ExecStart=/home/admin/ideabase/manage.sh prod -d
+ExecStop=/usr/bin/docker-compose -f docker-compose.yml -f docker-compose.prod.yml down
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=ideabase
+
+[Install]
+WantedBy=multi-user.target 

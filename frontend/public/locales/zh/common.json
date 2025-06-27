@@ -1,0 +1,138 @@
+{
+  "header": {
+    "title": "IdeaBase.ai",
+    "subtitle": "发现 GitHub 趋势项目中的创业机会"
+  },
+  "navigation": {
+    "trending": "热门项目",
+    "apiDocs": "API文档",
+    "github": "GitHub"
+  },
+  "filter": {
+    "search": "搜索项目",
+    "searchPlaceholder": "项目名称或描述...",
+    "language": "编程语言",
+    "allLanguages": "所有语言",
+    "dateRange": "日期范围",
+    "allTime": "所有时间",
+    "today": "今天",
+    "thisWeek": "本周",
+    "thisMonth": "本月",
+    "sortBy": "排序方式",
+    "byDate": "按日期排序",
+    "byStars": "按 Star 数排序",
+    "byForks": "按 Fork 数排序"
+  },
+  "project": {
+    "loading": "加载中...",
+    "error": "获取项目失败，请稍后重试",
+    "noResults": "没有找到匹配的项目",
+
+    "listedDate": "上榜日期",
+    "language": "语言",
+    "noDescription": "没有描述",
+    "viewAnalysis": "查看商业分析",
+    "backToList": "返回列表",
+    "visitGitHub": "访问GitHub",
+    "projectHomepage": "项目主页",
+    "loadLimitReached": "已达到数据加载限制",
+    "loadLimitTip": "为了优化性能，已限制最多显示100条记录。请使用搜索功能查找特定项目。",
+    "searchTip": "建议使用上方的搜索和筛选功能来精确查找您感兴趣的项目。",
+    "showingResults": "显示 {{current}} 条结果（共 {{total}} 条数据）",
+    "trendingSuffix": "上榜",
+    "errorTitle": "出错了"
+  },
+  "insight": {
+    "title": "商业洞察与创业分析",
+    "businessValue": "商业价值",
+    "marketOpportunity": "市场机会",
+    "startupIdeas": "创业想法",
+    "targetAudience": "目标用户",
+    "competitionAnalysis": "竞争分析",
+    "generatedTime": "分析生成时间"
+  },
+  "analysis": {
+    "noData": "无数据",
+    "errorRetry": "您可以稍后再试，或者联系我们的支持团队。",
+    "processingIssue": "分析处理遇到问题",
+    "technicalIssue": "我们在分析此项目时遇到了技术问题。您仍然可以查看部分内容，或稍后再试。",
+    "analysisTime": "分析时间"
+  },
+  "footer": {
+    "copyright": "IdeaBase.ai. 创业想法不是最重要的，但没有想法是万万不行的。",
+    "contactUs": "联系我们",
+    "dailyAnalysis": "每日分析 GitHub 趋势项目，发掘创业机会。",
+    "aboutUs": "关于我们",
+    "privacyPolicy": "隐私政策",
+    "termsOfService": "使用条款"
+  },
+  "share": {
+    "label": "分享",
+    "linkedin": "分享到 LinkedIn",
+    "facebook": "分享到 Facebook"
+  },
+  "language": {
+    "zh": "中文",
+    "en": "English"
+  },
+  "common": {
+    "backToTop": "回到顶部"
+  },
+  "api": {
+    "title": "IdeaBase.ai API",
+    "backToHome": "返回首页",
+    "documentTitle": "API 文档",
+    "documentDescription": "IdeaBase.ai REST API 提供对 GitHub 热门项目数据和 AI 分析结果的访问",
+    "basicInfo": {
+      "title": "基本信息",
+      "baseUrl": "基础 URL",
+      "authentication": "认证方式",
+      "contentType": "内容类型",
+      "version": "API 版本"
+    },
+    "endpoints": {
+      "title": "API 端点",
+      "getProjects": {
+        "name": "获取热门项目列表",
+        "description": "获取所有GitHub热门项目的列表"
+      },
+      "getProject": {
+        "name": "通过 owner/repo 获取项目详情",
+        "description": "通过 GitHub 用户名和仓库名获取项目详情"
+      },
+      "getInsights": {
+        "name": "通过 owner/repo 获取项目分析",
+        "description": "通过 GitHub 用户名和仓库名获取项目的AI分析结果"
+      },
+      "getLanguages": {
+        "name": "获取热门语言列表",
+        "description": "获取所有GitHub热门项目的编程语言列表"
+      },
+      "adminScrape": {
+        "name": "触发手动爬取",
+        "description": "手动触发GitHub热门项目爬取（需要管理员权限）"
+      }
+    },
+    "parameters": {
+      "language": "按编程语言筛选",
+      "limit": "返回结果数量限制",
+      "offset": "分页偏移量",
+      "owner": "GitHub 用户名或组织名",
+      "repo": "仓库名",
+      "insightLanguage": "洞察内容的语言，默认为英文",
+      "languages": "要爬取的语言列表",
+      "timeRange": "时间范围：daily/weekly/monthly"
+    },
+    "table": {
+      "parameters": "参数",
+      "name": "名称",
+      "type": "类型",
+      "required": "是否必须",
+      "description": "描述",
+      "response": "响应",
+      "yes": "是",
+      "no": "否"
+    },
+    "footer": "API文档版本 v1.0.0"
+  }
+}

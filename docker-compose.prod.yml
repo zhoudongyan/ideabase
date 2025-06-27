@@ -1,0 +1,35 @@
+services:
+  frontend:
+    build:
+      target: production
+    restart: always
+    environment:
+      - NODE_ENV=production
+
+  backend:
+    command: bash -c "sleep 5 && alembic upgrade head && uvicorn main:app --host 0.0.0.0 --port 8000"
+    restart: always
+
+  db:
+    restart: always
+
+  redis:
+    restart: always
+
+  celery-worker:
+    command: celery -A app.tasks.scrape_trending worker --loglevel=info
+    restart: always
+
+  celery-beat:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    command: celery -A app.tasks.scrape_trending beat --loglevel=info
+    env_file:
+      - ./backend/.env
+    environment:
+      - PYTHONDONTWRITEBYTECODE=1
+      - PYTHONUNBUFFERED=1
+    depends_on:
+      - redis
+    restart: always
